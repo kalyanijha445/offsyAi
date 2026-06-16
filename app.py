@@ -1,17 +1,16 @@
 from flask import Flask, render_template, request, jsonify
 import sqlite3
 import json
+import os
 import google.generativeai as genai
 
 app = Flask(__name__)
 
-# ==========================================
-# CONFIGURE GEMINI API KEY
-# ==========================================
-
- GEMINI_API_KEY = "AQ.Ab8RN6Ln1Z4-76pkyeRVVBGSkk5t_blhXWVA_j7Q-RKAkvnUwg" # Replace with your actual key
+# Gemini API Key from Render Environment Variable
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=GEMINI_API_KEY)
 
+# Gemini Model
 model = genai.GenerativeModel("gemini-3.5-flash")
 
 DATABASE = "event_history_offsy.db"
