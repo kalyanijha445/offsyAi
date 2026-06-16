@@ -29,7 +29,6 @@ Offsy AI is an AI-powered Event Concierge Platform that helps users plan corpora
 * HTML
 * CSS
 * JavaScript
-* Bootstrap
 
 ### Backend
 
@@ -59,10 +58,8 @@ OffsyAI/
 │   ├── index.html
 │
 ├── static/
-│   ├── css/
-│   ├── js/
-│   └── images/
-│
+│      └── images/
+│   
 └── README.md
 ```
 
