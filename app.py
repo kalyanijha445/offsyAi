@@ -9,7 +9,7 @@ app = Flask(__name__)
 # CONFIGURE GEMINI API KEY
 # ==========================================
 
-  # Replace with your actual key
+ GEMINI_API_KEY = "AQ.Ab8RN6Ln1Z4-76pkyeRVVBGSkk5t_blhXWVA_j7Q-RKAkvnUwg" # Replace with your actual key
 genai.configure(api_key=GEMINI_API_KEY)
 
 model = genai.GenerativeModel("gemini-3.5-flash")
